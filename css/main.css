@@ -99,6 +99,7 @@ body {
   min-height: 100vh;
   color: #0A3754;
   font-family: Arial, Helvetica, sans-serif, '微軟正黑體';
+  overflow-x: hidden;
 }
 
 .bg-yel {
@@ -111,8 +112,17 @@ body {
   border-radius: 2rem;
 }
 
+.sec0 {
+  height: 100vh;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+}
+
 section {
-  position: fixed;
+  position: absolute;
   z-index: 9;
   width: 100%;
   height: 100%;
@@ -147,6 +157,10 @@ section.sec5 {
 
 section.sec6 {
   z-index: 4;
+}
+
+section.sec7 {
+  z-index: 3;
 }
 
 section.active .page {
@@ -250,6 +264,11 @@ section.sec6 {
 
 .page .tag6 {
   background-color: #CBF8FB;
+}
+
+.page.page7 {
+  background-color: #2CA6BE;
+  border: none;
 }
 
 .page article {
