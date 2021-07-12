@@ -5,3 +5,37 @@ $myel:#FFE85E;
 $dyel:#FDC635;
 $lyel:#FCF3BC;
 $pageColor:($myel, $dyel, $lyel, $lgrn, $myel, $lgrn);
+
+
+@mixin mobileSet($type) {
+  @if($type=='phone') {
+
+    //手機斷點
+    @media screen and (max-width:565px) {
+      @content;
+    }
+  }
+
+  @else if($type=='pad') {
+
+    //平板
+    @media screen and (max-width:767px) {
+      @content;
+    }
+  }
+
+  @else if($type=='padpro') {
+    @media screen and (max-width:991px) {
+      @content;
+    }
+  }
+
+  @else if($type=='note') {
+
+    //筆電
+    @media screen and (max-width:1199px) {
+      @content;
+    }
+  }
+
+}

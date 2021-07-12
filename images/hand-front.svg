@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="353" height="392" viewBox="0 0 353 392">
+  <defs>
+    <clipPath id="clip-hand-front">
+      <rect width="353" height="392"/>
+    </clipPath>
+  </defs>
+  <g id="hand-front" clip-path="url(#clip-hand-front)">
+    <path id="Path_58" data-name="Path 58" d="M312.417,456.53s-55.6-66.531-56.189-73.748C251.838,328.788,261.5,194.9,261.5,194.9H114c-54.433,0-38.63-87.795-38.63-87.795L277.3,75.5l114.133,63.212,13.278,23.494" transform="translate(-81.42 -25.422) rotate(-7)" fill="#fdc635" stroke="#0a3754" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="10"/>
+  </g>
+</svg>

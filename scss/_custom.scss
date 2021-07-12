@@ -26,6 +26,7 @@
 
 /*--------------------*/
 body {
+  background-image: url(../images/block-bg.svg);
   background-color: $mgrn;
   min-height: 100vh;
   color: $mblk;
@@ -45,11 +46,240 @@ body {
 
 .sec0 {
   height: 100vh;
+  position: relative;
+  margin-bottom: 10vh;
+}
+
+.pen {
+  position: absolute;
+  width: 5%;
+  top: 39%;
+  transform: rotate(-26deg);
+  left: 5%;
+}
+
+.mouse {
+  position: absolute;
+  width: 20%;
+  top: -23%;
+  right: 0;
+  transform: rotate(-33deg);
+}
+
+.main-tit {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 50vw;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include mobileSet("pad") {
+    width: 80vw;
+  }
+
+  span {
+    display: block;
+    text-align: center;
+
+    &:nth-child(1) {
+      width: 10vw;
+      height: 10vw;
+      font-size: 9vw;
+      line-height: 10vw;
+      background-color: $mblk;
+      color: $lgrn;
+      transform: rotate(-7deg);
+
+      @include mobileSet("pad") {
+        width: 15vw;
+        height: 15vw;
+        line-height: 15vw;
+      }
+    }
+
+    &:nth-child(2) {
+      width: 8vw;
+      height: 8vw;
+      font-size: 7vw;
+      line-height: 8vw;
+      background-color: $myel;
+      color: $mblk;
+      transform: rotate(7deg) translate(-7px, 30px);
+
+      @include mobileSet("pad") {
+        width: 15vw;
+        height: 15vw;
+        line-height: 15vw;
+        transform: none;
+      }
+    }
+
+    &:nth-child(3) {
+      width: 8vw;
+      height: 8vw;
+      font-size: 7vw;
+      line-height: 8vw;
+      background-color: $lyel;
+      color: $mblk;
+      transform: rotate(-9deg) translate(-16px, 0px);
+
+      @include mobileSet("pad") {
+        width: 15vw;
+        height: 15vw;
+        line-height: 15vw;
+        transform: none;
+      }
+    }
+
+    &:nth-child(4) {
+      width: 8vw;
+      height: 8vw;
+      font-size: 7vw;
+      line-height: 8vw;
+      background-color: $myel;
+      color: $mblk;
+      transform: translate(-27px, 27px);
+
+      @include mobileSet("pad") {
+        width: 15vw;
+        height: 15vw;
+        line-height: 15vw;
+        transform: none;
+      }
+    }
+
+    &:nth-child(5) {
+      width: 8vw;
+      height: 8vw;
+      font-size: 7vw;
+      line-height: 8vw;
+      background-color: $mblk;
+      color: $lgrn;
+      transform: rotate(5deg) translate(-33px, 10px);
+
+      @include mobileSet("pad") {
+        width: 15vw;
+        height: 15vw;
+        line-height: 15vw;
+        transform: none;
+      }
+    }
+
+    &:nth-child(6) {
+      width: 8vw;
+      height: 8vw;
+      font-size: 7vw;
+      line-height: 8vw;
+      background-color: $lgrn;
+      color: $mblk;
+      transform: rotate(-9deg) translate(-46px, 24px);
+
+      @include mobileSet("pad") {
+        width: 15vw;
+        height: 15vw;
+        line-height: 15vw;
+        transform: none;
+      }
+    }
+  }
+
+  +.cht {
+    position: relative;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.25rem;
+    padding: .5rem;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 30px;
+      height: 1px;
+      position: absolute;
+      top: 0;
+      left: calc(50% - 15px);
+      background-color: $mblk;
+    }
+
+    &::after {
+      content: "";
+      bottom: 0;
+      top: unset;
+    }
+  }
+}
+
+.scroll-tip {
+  position: absolute;
+  bottom: 1vh;
+  width: 100%;
+  text-align: center;
+  font-size: .8rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: $lyel;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 20vw;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include mobileSet('pad') {
+      width: 50vw;
+      height: 50vw;
+      border-radius: 50vw;
+    }
+  }
+
+  img {
+    animation: floating 1s infinite alternate;
+  }
 }
 
 main {
   position: relative;
   height: 100vh;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 15vw;
+    height: 33vh;
+    background: url(../images/hand-front.svg) no-repeat top left;
+    background-size: contain;
+    z-index: 12;
+    right: 9%;
+    top: 36%;
+
+    @media screen and (max-width:1400px) {
+      content: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 40vw;
+    height: 100vh;
+    background: url(../images/hand-bk.svg) no-repeat top left;
+    background-size: contain;
+    right: -5vw;
+    bottom: -20%;
+    z-index: -2;
+
+    @media screen and (max-width:1400px) {
+      content: none;
+    }
+  }
+
 }
 
 section {
@@ -61,6 +291,12 @@ section {
   height: 100%;
   transform-origin: bottom center;
   pointer-events: none;
+
+  @include mobileSet('pad') {
+    position: static;
+    height: auto;
+    transform: none !important;
+  }
 
   * {
     pointer-events: auto;
@@ -123,6 +359,14 @@ section {
   margin: 0 auto;
   transform: translateX(5%);
 
+  @include mobileSet('pad') {
+    transform: translateX(0);
+    height: auto;
+    background: white !important;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+  }
+
   @for $i from 1 through length($pageColor) {
 
     &.page#{$i} {
@@ -138,13 +382,23 @@ section {
   &.page7 {
     background-color: $mgrn;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mobileSet('pad') {
+      background-color: $mgrn !important;
+    }
   }
 
   article {
     position: relative;
     margin: 0 0 0 auto;
     width: calc(100% - 4rem);
-    // border: 1px solid red;
+
+    @include mobileSet('pad') {
+      width: 100%;
+    }
   }
 }
 
@@ -158,6 +412,10 @@ section {
   position: absolute;
   left: -125px;
   transform: rotate(0);
+
+  @include mobileSet('pad') {
+    display: none;
+  }
 
   &.tag1 {
     top: 5%;
@@ -195,7 +453,10 @@ section {
 .tri-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
+  @include mobileSet('pad') {
+    flex-direction: column;
+  }
 
   .icon {
     background: $mgrn;
@@ -211,43 +472,77 @@ section {
   }
 
   li {
+    width: 25%;
+
+    @include mobileSet('pad') {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
     >div {
       &:last-child {
         margin-top: .5rem;
+
+        @include mobileSet('pad') {
+          margin-top: 0;
+          margin-left: 1rem;
+        }
       }
     }
   }
 }
 
 .pic {
-  background: $lgrn;
+  background-color: $lgrn;
   border: 8px solid $mblk;
   width: 30%;
-  padding-bottom: 32%;
   position: absolute;
   top: -4rem;
   right: 0;
   transform: rotate(-4deg);
   box-shadow: 5px 5px $myel;
+
+  @include mobileSet('pad') {
+    width: 40%;
+    top: -2rem;
+  }
+
+  img {
+    margin-bottom: -21%;
+  }
 }
 
 .name {
   font-size: 5rem;
   font-weight: bold;
   letter-spacing: 5px;
+
+  @include mobileSet('pad') {
+    font-size: 3rem;
+  }
 }
 
 .eng-name {
   letter-spacing: 3px;
   font-size: 2rem;
+
+  @include mobileSet('pad') {
+    font-size: 1.25rem;
+  }
 }
 
 .simple-intro {
   margin: 5% 0;
-  padding: 2% 7.5%;
+  padding: 5% 7.5%;
   line-height: 1.75;
   position: relative;
   display: inline-block;
+
+  @include mobileSet('pad') {
+    padding: 2rem 4rem;
+  }
 
   &::before {
     content: "";
@@ -272,13 +567,19 @@ section {
   }
 }
 
+h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
 .tit {
   color: white;
   background-color: $mblk;
   padding: .5rem 2rem;
   display: inline-block;
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto 1rem;
 
   &::before {
     content: "";
@@ -335,13 +636,44 @@ section {
   height: calc(80vh / 3);
   margin-bottom: 1rem;
 
+  @include mobileSet('pad') {
+    flex-direction: column;
+    height: auto;
+  }
+
   .logo {
     width: 30%;
     text-align: center;
+
+    @include mobileSet('pad') {
+      width: 100%;
+    }
   }
 
   .content {
     width: 65%;
+
+    @include mobileSet('pad') {
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+}
+
+.sec2 {
+  text-align: center;
+
+  ul {
+    padding-left: 1rem;
+
+    @include mobileSet('pad') {
+      padding: 0;
+      text-align: left;
+    }
+  }
+
+  li {
+    margin-bottom: .5rem;
   }
 }
 
@@ -366,5 +698,45 @@ section {
   li {
     margin-bottom: .5rem;
     list-style-type: circle;
+  }
+}
+
+.page6 {}
+
+.scroll-content {
+  article {
+    padding: 1rem;
+    overflow-y: scroll;
+    height: 100%;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $mgrn;
+    }
+
+    &::-webkit-scrollbar-button {
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-corner {
+      background-color: transparent;
+    }
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
   }
 }

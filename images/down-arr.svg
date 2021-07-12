@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-down-arr">
+      <rect width="40" height="40"/>
+    </clipPath>
+  </defs>
+  <g id="down-arr" clip-path="url(#clip-down-arr)">
+    <g id="Group_29" data-name="Group 29" transform="translate(-1510.541 -5955.5)">
+      <path id="Path_49" data-name="Path 49" d="M0,0,.1,16.971l17.229.1" transform="translate(1518.542 5976.867) rotate(-45)" fill="none" stroke="#0a3754" stroke-linecap="round" stroke-width="4"/>
+      <line id="Line_2" data-name="Line 2" y1="15" transform="translate(1530.707 5961.5)" fill="none" stroke="#0a3754" stroke-linecap="round" stroke-width="4"/>
+    </g>
+  </g>
+</svg>

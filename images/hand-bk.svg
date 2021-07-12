@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="955" height="1189" viewBox="0 0 955 1189">
+  <defs>
+    <clipPath id="clip-hand-bk">
+      <rect width="955" height="1189"/>
+    </clipPath>
+  </defs>
+  <g id="hand-bk" clip-path="url(#clip-hand-bk)">
+    <path id="Path_57" data-name="Path 57" d="M486.544,98.33l104.648,119.4,29.85,135.2L591.193,640.9,759.864,893.753l78.91,135.2L662.658,1250.2,415.6,735.722,273.375,539.061,73.2,374.007s-81.6-45.653-49.99-91.307c0,0-57.119-73.748,7.849-92.539,0,0-60.034-58.471,14.047-105.877,0,0-49.5-84.283,36.874-84.283Z" transform="translate(-15.118 27.77) rotate(-7)" fill="#fdc635" stroke="#0a3754" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="10"/>
+  </g>
+</svg>

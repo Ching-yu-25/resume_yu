@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="232" height="624" viewBox="0 0 232 624">
+  <defs>
+    <clipPath id="clip-mouse">
+      <rect width="232" height="624"/>
+    </clipPath>
+  </defs>
+  <g id="mouse" clip-path="url(#clip-mouse)">
+    <g id="Group_45" data-name="Group 45" transform="translate(-1924 -5743)">
+      <g id="Group_42" data-name="Group 42">
+        <rect id="Rectangle_50" data-name="Rectangle 50" width="192" height="304" rx="96" transform="translate(1932 6061)" fill="#ffe85e"/>
+        <path id="Path_51" data-name="Path 51" d="M2020,6070.913s-34.288-115.847,73.284-188.48,34.938-139.752,34.938-139.752" fill="none" stroke="#0a3754" stroke-width="6"/>
+        <g id="Rectangle_49" data-name="Rectangle 49" transform="translate(1924 6056)" fill="#cbf8fb" stroke="#0a3754" stroke-width="6">
+          <rect width="192" height="304" rx="96" stroke="none"/>
+          <rect x="3" y="3" width="186" height="298" rx="93" fill="none"/>
+        </g>
+        <path id="Path_52" data-name="Path 52" d="M1942.066,6153.436s69.636-25.026,153.962,0" fill="none" stroke="#0a3754" stroke-linecap="round" stroke-width="6"/>
+        <path id="Path_53" data-name="Path 53" d="M2020,6076.183v60.388" transform="translate(0 -5)" fill="none" stroke="#0a3754" stroke-linecap="round" stroke-width="6"/>
+      </g>
+      <ellipse id="Ellipse_8" data-name="Ellipse 8" cx="56.5" cy="43" rx="56.5" ry="43" transform="translate(1964.121 6243.393) rotate(13)" fill="#fcf3bc"/>
+    </g>
+  </g>
+</svg>
